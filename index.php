@@ -29,7 +29,7 @@ $donorLogged = isset($_SESSION['donor']) && $_SESSION['donor'] != "";
                 <a class="btn-solid" href="donate.php">Donate</a>
             <?php } else { ?>
                 <a href="donor-login.php">Donor Login</a>
-                <a class="btn-solid" href="donor-register.php">Become a Donor</a>
+                <a class="btn-solid" href="donor-register.php">Donor</a>
             <?php } ?>
             <a href="staff-login.php">Staff Login</a>
         </div>
