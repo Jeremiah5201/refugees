@@ -1,0 +1,109 @@
+:root {
+  --navy: #0b1f4d;
+  --indigo: #3d4fc4;
+  --font: "DM Sans", "Segoe UI", sans-serif;
+  --display: "Fraunces", Georgia, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(7, 21, 54, 0.82), rgba(61, 79, 196, 0.72)),
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.18), transparent 35%),
+    linear-gradient(160deg, #0b1f4d, #2a3f9a 45%, #6a6ae3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+}
+
+.container fieldset {
+  width: 100%;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 22px;
+  padding: 28px 22px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.container fieldset h1 {
+  font-family: var(--display);
+  color: var(--navy);
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.brand-sub {
+  color: #5b6785;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+
+.container fieldset form {
+  width: 100%;
+}
+
+.container fieldset form input {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  outline: none;
+  border: 1px solid #d7deef;
+  font-family: var(--font);
+  font-size: 1rem;
+  background: #fbfcff;
+}
+
+.container fieldset form input:focus {
+  border-color: var(--indigo);
+  box-shadow: 0 0 0 3px rgba(61, 79, 196, 0.15);
+}
+
+.container fieldset form .btn {
+  background: linear-gradient(135deg, var(--navy), var(--indigo));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.container fieldset form .btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.login-msg {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(199, 59, 59, 0.1);
+  color: #c73b3b;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .container fieldset {
+    padding: 22px 16px;
+  }
+}

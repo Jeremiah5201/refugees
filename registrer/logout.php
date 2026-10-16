@@ -1,0 +1,9 @@
+<?php
+session_start();
+unset($_SESSION['registrar']);
+unset($_SESSION['camp']);
+unset($_SESSION['location']);
+unset($_SESSION['name']);
+header('location:index.php');
+exit;
+?>
